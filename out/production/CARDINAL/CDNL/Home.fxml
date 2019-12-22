@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane
+        id="AnchorPane"
+        maxHeight="-Infinity"
+        maxWidth="-Infinity"
+        minHeight="-Infinity"
+        minWidth="-Infinity"
+        prefHeight="647.0"
+        prefWidth="1363.0"
+        xmlns:fx="http://javafx.com/fxml/1"
+        xmlns="http://javafx.com/javafx/2.2"
+        fx:controller="CDNL"
+        >
+    <children>
+        <MenuBar layoutX="0.0" layoutY="0.0" prefWidth="1363.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <TabPane layoutX="0.0" layoutY="42.0" prefHeight="604.0" prefWidth="1363.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Analyze">
+                    <content>
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="569.0" prefWidth="1363.0">
+                            <children>
+                                <SplitPane dividerPositions="0.1381337252020573" focusTraversable="true" layoutX="0.0" layoutY="0.0" prefHeight="549.0" prefWidth="1363.0" visible="true">
+                                    <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="Base" />
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                            <children>
+                                                <SplitPane dividerPositions="0.6938596491228071" focusTraversable="true" layoutX="0.0" layoutY="0.0" prefHeight="549.0" prefWidth="1142.0">
+                                                    <items>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                            <children>
+                                                                <SplitPane dividerPositions="0.4990825688073395" focusTraversable="true" layoutX="0.0" layoutY="0.0" orientation="VERTICAL" prefHeight="547.0" prefWidth="789.0">
+                                                                    <items>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                                            <children>
+                                                                                <Pane layoutX="661.0" layoutY="118.0" prefHeight="126.0" prefWidth="126.0">
+                                                                                    <effect>
+                                                                                        <DropShadow color="#646464" offsetX="5.0" offsetY="5.0" />
+                                                                                    </effect>
+                                                                                </Pane>
+                                                                                <Pane layoutX="0.0" layoutY="243.0" prefHeight="26.0" prefWidth="792.0">
+                                                                                    <children>
+                                                                                        <Slider layoutX="52.0" layoutY="1.0" prefWidth="734.0" />
+                                                                                        <Button layoutX="14.0" layoutY="3.0" minHeight="19.931640625" minWidth="20.0" mnemonicParsing="false" prefHeight="19.931640625" prefWidth="20.0" text="Button" />
+                                                                                    </children>
+                                                                                </Pane>
+                                                                            </children>
+                                                                        </AnchorPane>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                                                                    </items>
+                                                                </SplitPane>
+                                                            </children>
+                                                        </AnchorPane>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                            <children>
+                                                                <SplitPane dividerPositions="0.5014492753623189" focusTraversable="true" layoutX="0.0" layoutY="0.0" prefHeight="546.0" prefWidth="347.0">
+                                                                    <items>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                                            <children>
+                                                                                <SplitPane dividerPositions="0.6777163904235728" focusTraversable="true" layoutX="0.0" layoutY="0.0" orientation="VERTICAL" prefHeight="545.0" prefWidth="171.0">
+                                                                                    <items>
+                                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                                                                                    </items>
+                                                                                </SplitPane>
+                                                                            </children>
+                                                                        </AnchorPane>
+                                                                    </items>
+                                                                </SplitPane>
+                                                            </children>
+                                                        </AnchorPane>
+                                                    </items>
+                                                </SplitPane>
+                                            </children>
+                                        </AnchorPane>
+                                    </items>
+                                </SplitPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Design">
+                    <content>
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <SplitPane dividerPositions="0.21528288023512124" focusTraversable="true" layoutX="0.0" layoutY="0.0" prefHeight="549.0" prefWidth="1363.0">
+                                    <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                            <children>
+                                                <SplitPane dividerPositions="0.7206020696142992" focusTraversable="true" layoutX="0.0" layoutY="0.0" prefHeight="547.0" prefWidth="1065.0">
+                                                    <items>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                                                    </items>
+                                                </SplitPane>
+                                            </children>
+                                        </AnchorPane>
+                                    </items>
+                                </SplitPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Learn">
+                    <content>
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="569.0" prefWidth="1363.0" />
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
+
