@@ -1,0 +1,75 @@
+.root {
+-fx-base: rgb(32,37,44) !important;
+}
+TitledPane,*.list-view,*.list-view:vertical,.list-cell,*.content,Accordion,BorderPane,TreeView,.tree-cell {
+-fx-background-color: rgb(49,56,69);
+-fx-padding: 0;
+}
+Pane,AnchorPane,Region {
+-fx-background-color: rgb(32,37,44);
+-fx-border-width: 0px 0px 0px 0px;
+-fx-padding: 0px 0px 0px 0px;
+}
+.menu-bar {
+-fx-background-color: rgb(49,56,69);
+}
+*.split-pane-divider {
+visibility: true;
+-fx-background-color: transparent;
+-fx-border-width: 1px 0px 0px 0px;
+-fx-border-color: black;
+-fx-padding: 0px 1px 0px 0px
+}
+*.horizontal-grabber {
+-fx-background-color: transparent;
+-fx-border-color: transparent;
+}
+*.title {
+-fx-background-color: rgb(49,56,69);
+}
+*.tab-header-background {
+-fx-background-color: rgb(32,37,44);
+}
+*.text {
+-fx-fill: rgba(255,255,255,1);
+-fx-font-family: 'Biome';
+-fx-font-size: 1em;
+}
+*.tab-label>.text {
+-fx-fill: rgba(255,255,255,0.7);
+-fx-font-size: 0.9em;
+}
+.tab:selected .tab-label .text,.tab:top:selected .tab-label .text  {
+-fx-fill: rgba(255,255,255,1);
+}
+.tab-pane {
+-fx-tab-min-height: 0em;
+-fx-snap-to-pixel: false;
+}
+.tab {
+-fx-background-radius: 0px;
+-fx-padding: 0em 1em 0em 1em;
+-fx-border-radius: 0px;
+-fx-border-width: 0px 0px 0.2em 0px;
+-fx-border-color: rgb(32,37,44);
+-fx-background-color: rgb(32,37,44);
+}
+.tab:selected,.tab:top:selected {
+-fx-background-color: rgb(62,68,78);
+-fx-border-radius: 0px;
+-fx-border-width: 0px 0px 0.2em 0px;
+-fx-border-color: rgb(67,99,160);
+}
+.fileStructureWork {
+-fx-background-color: rgb(32,37,44);
+-fx-border-width: 0px 0px 0.01em 0px;
+-fx-border-color: black;
+}
+.fileStructureWork .button {
+-fx-background-color: rgb(32,37,44);
+-fx-font-size: 0.9em;
+}
+.fileStructureWork .button:selected {
+-fx-background-color: rgb(32,37,44);
+-fx-font-weight: bold;
+}

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<?import java.net.URL?>
+<BorderPane id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.9999000000025" prefWidth="1477.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+    <bottom>
+        <HBox prefHeight="36.999900000002526" prefWidth="600.0" />
+    </bottom>
+    <center>
+        <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="100.0">
+            <tabs>
+                <Tab text="Analyze">
+                    <content>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0">
+                            <center>
+                                <SplitPane dividerPositions="0.4945652173913043" focusTraversable="true" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                                    <items>
+                                        <BorderPane prefHeight="200.0" prefWidth="200.0">
+                                            <bottom>
+                                                <BorderPane prefHeight="42.0" prefWidth="1075.0">
+                                                    <center>
+                                                        <Slider />
+                                                    </center>
+                                                    <left>
+                                                        <RadioButton alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefWidth="52.0" text="" textAlignment="LEFT" BorderPane.alignment="CENTER_RIGHT" />
+                                                    </left>
+                                                </BorderPane>
+                                            </bottom>
+                                            <center>
+                                                <Pane prefHeight="200.0" prefWidth="200.0" />
+                                            </center>
+                                        </BorderPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                                    </items>
+                                </SplitPane>
+                            </center>
+                            <right>
+                                <SplitPane dividerPositions="0.3005050505050505" focusTraversable="true" prefHeight="160.0" prefWidth="200.0">
+                                    <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                                    </items>
+                                </SplitPane>
+                            </right>
+                        </BorderPane>
+                    </content>
+                </Tab>
+                <Tab text="Design">
+                    <content>
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+    <left>
+        <Accordion>
+            <expandedPane>
+                <TitledPane fx:id="x1" animated="false" text="Rocket 2">
+                    <content>
+                        <TreeView prefHeight="200.0" prefWidth="200.0" />
+                    </content>
+                </TitledPane>
+            </expandedPane>
+            <panes>
+                <TitledPane animated="false" text="Rocket 1">
+                    <content>
+                        <TreeView prefHeight="200.0" prefWidth="200.0" />
+                    </content>
+                </TitledPane>
+                <fx:reference source="x1" />
+                <TitledPane animated="false" text="Rocket 2">
+                    <content>
+                        <TreeView prefHeight="200.0" prefWidth="200.0" />
+                    </content>
+                </TitledPane>
+            </panes>
+        </Accordion>
+    </left>
+    <stylesheets>
+        <URL value="@Main.css" />
+    </stylesheets>
+    <top>
+        <VBox pickOnBounds="true" prefHeight="77.0" prefWidth="1477.0" snapToPixel="false">
+            <children>
+                <MenuBar>
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Close" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Edit">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Delete" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <HBox prefHeight="37.0" prefWidth="1477.0" styleClass="fileStructureWork">
+                    <children>
+                        <Button alignment="TOP_CENTER" mnemonicParsing="false" text="BRRDS" />
+                        <Button mnemonicParsing="false" text="Rocket" />
+                        <Button mnemonicParsing="false" text="Fin Section" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </top>
+</BorderPane>
+
