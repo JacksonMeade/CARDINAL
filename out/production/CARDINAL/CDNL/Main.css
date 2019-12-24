@@ -1,11 +1,11 @@
 .root {
--fx-base: rgb(32,37,44) !important;
+-fx-base: rgb(32,37,44);
 }
-TitledPane,*.list-view,*.list-view:vertical,.list-cell,*.content,Accordion,BorderPane,TreeView,.tree-cell {
+TitledPane,*.list-view,*.list-view:vertical,.list-cell,*.content,Accordion,TreeView,.tree-cell,AnchorPane {
 -fx-background-color: rgb(49,56,69);
 -fx-padding: 0;
 }
-Pane,AnchorPane,Region {
+Pane,BorderPane {
 -fx-background-color: rgb(32,37,44);
 -fx-border-width: 0px 0px 0px 0px;
 -fx-padding: 0px 0px 0px 0px;
@@ -25,6 +25,7 @@ visibility: true;
 -fx-border-color: transparent;
 }
 *.title {
+-fx-font-weight: bold;
 -fx-background-color: rgb(49,56,69);
 }
 *.tab-header-background {
@@ -72,4 +73,58 @@ visibility: true;
 .fileStructureWork .button:selected {
 -fx-background-color: rgb(32,37,44);
 -fx-font-weight: bold;
+}
+.btn-primary {
+-fx-background-color: rgba(32,37,44,0.8);
+-fx-border-width: 1px 1px 1px 1px;
+-fx-border-color: rgba(255,255,255,0.8);
+-fx-border-radius: 0px;
+}
+.btn-primary:hover {
+-fx-border-color: rgba(255,255,255,1);
+}
+.btn-list {
+   -fx-background-color: transparent;
+   -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-padding-top: 0px;
+    -fx-padding-bottom: 0px;
+    -fx-padding-left: 0px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-border-color: transparent;
+    -fx-border-width: 0px;
+}
+.btn-list > * {
+    -fx-fill: rgba(255,255,255,0.8);
+    }
+.btn-list.orange {
+-fx-background-color: rgba(236,145,10,0.1);
+}
+.btn-list.blue {
+-fx-background-color: rgba(9,118,237,0.1);
+}
+.btn-list.green {
+-fx-background-color: rgba(123,236,10,0.1);
+}
+
+.btn-list.grey:hover {
+-fx-background-color: rgba(62,68,78,0.4);
+}
+
+.btn-list.orange:hover {
+-fx-background-color: rgba(236,145,10,0.4);
+}
+.btn-list.blue:hover {
+-fx-background-color: rgba(9,118,237,0.4);
+}
+.btn-list.green:hover {
+-fx-background-color: rgba(123,236,10,0.4);
+}
+
+.btn-list:hover > * {
+    -fx-fill: white;
+    }
+
+.btn-list.active {
+  -fx-background-color: rgb(32,37,44);
 }
