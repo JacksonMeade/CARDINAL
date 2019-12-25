@@ -97,27 +97,31 @@ visibility: true;
 .btn-list > * {
     -fx-fill: rgba(255,255,255,0.8);
     }
-.btn-list.orange {
+
+ .btn-list.feature {
+ -fx-font-weight: bold;
+ }
+.btn-list.pressure {
 -fx-background-color: rgba(236,145,10,0.1);
 }
-.btn-list.blue {
+.btn-list.inertial {
 -fx-background-color: rgba(9,118,237,0.1);
 }
-.btn-list.green {
+.btn-list.camera {
 -fx-background-color: rgba(123,236,10,0.1);
 }
 
-.btn-list.grey:hover {
+.btn-list.grey:hover,btn-list.feature:hover {
 -fx-background-color: rgba(62,68,78,0.4);
 }
 
-.btn-list.orange:hover {
+.btn-list.pressure:hover {
 -fx-background-color: rgba(236,145,10,0.4);
 }
-.btn-list.blue:hover {
+.btn-list.inertial:hover {
 -fx-background-color: rgba(9,118,237,0.4);
 }
-.btn-list.green:hover {
+.btn-list.camera:hover {
 -fx-background-color: rgba(123,236,10,0.4);
 }
 
