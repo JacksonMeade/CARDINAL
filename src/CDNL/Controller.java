@@ -257,6 +257,7 @@ public class Controller {
             case "Data":
                 Tab tab = (Tab)FXMLLoader.load(this.getClass().getResource("dataTab.fxml"));
                 tab.setText(title);
+                
                 if (!Tabulate.getTabs().contains(tab)) { Tabulate.getTabs().add(tab); }
                 Tabulate.getSelectionModel().select(tab);
                 break;
