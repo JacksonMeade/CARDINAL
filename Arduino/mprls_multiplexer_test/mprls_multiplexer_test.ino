@@ -19,7 +19,7 @@
  *
  */
  
-#include <Wire.h>
+#include "Wire.h"
 #include "Adafruit_MPRLS.h"
 
 //This code selects a port and attempts to read data from the connected pressure sensor.
