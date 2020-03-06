@@ -1,3 +1,4 @@
+
 /**
  * TCA9548 I2CScanner.pde -- I2C bus scanner for Arduino
  *
@@ -33,6 +34,8 @@ void setup()
 {
     Serial.begin(115200);
     Serial.println("MPRLS Simple Test");
+    tcaselect(7);
+    
     if (! mpr.begin()) {
       Serial.println("Failed to communicate with MPRLS sensor, check wiring?");
       while (1) {
